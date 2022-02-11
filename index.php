@@ -1,3 +1,7 @@
+<?php
+    include 'logic.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,22 +18,31 @@
 <body>
     <nav>
         <div class="link-container">
-            <a href="#" id="nav-link-medium" class="nav-link">MEDIUM</a>
+            <a href="https://medium.com/@sudipbashyal6" target="_blank" id="nav-link-medium" class="nav-link">MEDIUM</a>
             <p class="link-info">I like writing programming articles on medium to explain topics to one facing difficulties.</p>
         </div>
         
         <img src="Images/SudipBashyalLogo.png" alt="" class="nav-logo">
         <div class="link-container">
-            <a href="#" id="nav-link-medium" class="nav-link">GITHUB</a>
+            <a href="https://github.com/sudipbash/" target="_blank" id="nav-link-medium" class="nav-link">GITHUB</a>
             <p class="link-info">Visit my github profile to find amazing projects.</p>
         </div>
     </nav>
+
+    <?php if(isset($_REQUEST['info'])){?>
+        <?php if($_REQUEST['info']=='added'){?>
+            <span class="alert">Successfully Published.</span>
+        <?php }?>
+    <?php }?>
+
     <section class="article-container">
-        <div class="article">
-            <h1 class="article-heading">Breaking Down Object Oriented Programming.</h1>
-            <p class="article-category">Programming</p>
-            <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod blanditiis iste hic harum tempore expedita magnam fugiat dicta reprehenderit voluptate nobis consequatur provident eum accusamus labore consectetur sint atque, unde facilis quidem iusto. Debitis neque et illum laboriosam dolor omnis impedit ducimus quasi similique eveniet explicabo, facere ullam culpa ab placeat libero sunt dolorem corrupti. Quasi iusto eos sequi in atque itaque aliquam eius, voluptas aspernatur adipisci suscipit soluta porro necessitatibus maiores quidem facere eum asperiores dolorem impedit! Explicabo laborum numquam odit magnam nostrum eos rem delectus asperiores officia fuga. Laboriosam non velit eos incidunt architecto suscipit. Distinctio, quibusdam.</p>
+        <?php foreach($query as $q) {?>
+            <div class="article">
+            <h1 class="article-heading"><?php echo $q['title'];?></h1>
+            <p class="article-category"><?php echo $q['tag'];?></p>
+            <p class="article-text"><?php echo $q['content'];?></p>
         </div>
+        <?php }?>
         
     </section>
 </body>
