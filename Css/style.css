@@ -7,7 +7,21 @@
 body{
     background: #151517;
     color: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+::selection { background: rgb(10, 169, 63); }
+body::-webkit-scrollbar {
+  width: 1em;
+  }
+   
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(116, 116, 116);
 }
 nav{
     display: flex;
@@ -15,6 +29,10 @@ nav{
     justify-content: space-between;
     background-color: #1e1e21;
     padding: 1.2rem 15rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .nav-logo{
     height: 1.6rem;
@@ -46,4 +64,27 @@ nav{
 .link-container:hover > .link-info{
     display: flex;
     transform: translateY(0);
+}
+.article-container{
+    padding: 3rem 15rem;
+}
+.article{
+    margin: 4rem 0;
+}
+.article-heading{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.article-text{
+    line-height: 2.4;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.article-category{
+    background: rgb(10, 169, 63);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    max-width: fit-content;
+    margin: 1rem 0;
 }
