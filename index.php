@@ -17,11 +17,6 @@
 </head>
 <body>
     <nav>
-        <div class="link-container">
-            <a href="https://medium.com/@sudipbashyal6" target="_blank" id="nav-link-medium" class="nav-link">MEDIUM</a>
-            <p class="link-info">I like writing programming articles on medium to explain topics to one facing difficulties.</p>
-        </div>
-        
         <img src="Images/SudipBashyalLogo.png" alt="" class="nav-logo">
         <div class="link-container">
             <a href="https://github.com/sudipbash/" target="_blank" id="nav-link-medium" class="nav-link">GITHUB</a>
