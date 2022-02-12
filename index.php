@@ -23,13 +23,6 @@
             <p class="link-info">Visit my github profile to find amazing projects.</p>
         </div>
     </nav>
-
-    <?php if(isset($_REQUEST['info'])){?>
-        <?php if($_REQUEST['info']=='added'){?>
-            <span class="alert">Successfully Published.</span>
-        <?php }?>
-    <?php }?>
-
     <section class="article-container">
         <?php foreach($query as $q) {?>
             <div class="article">
