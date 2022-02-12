@@ -1,6 +1,6 @@
 <?php
 
-    $conn = mysqli_connect("sql110.epizy.com", "epiz_31044086", "52L9LLBZnR3", "epiz_31044086_article");
+    $conn = mysqli_connect("localhost", "root", "", "article");
 
     $sql = "SELECT * from data ORDER by id desc";
     $query = mysqli_query($conn, $sql);
