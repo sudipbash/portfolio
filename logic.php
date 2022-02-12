@@ -13,7 +13,7 @@
         mysqli_query($conn, $sql);
         
         // Redirect the author to the article page
-        header("Location: index.php");
+        header("Location: articles.php");
         exit();
     }
 
