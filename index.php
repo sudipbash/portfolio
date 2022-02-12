@@ -26,8 +26,8 @@
     <section class="portfolio">
         <div class="info1">
             <p class="nav-link info2-label">DEVELOPER / DESIGNER</p>
-            <h1 class="info-title">LOVING INTERCONNECTION OF 0 AND 1.</h1>
-            <p class="info-desc margin-bottom">Chilling with code, mostly, friend of bugs. Nevertheless, I come up with a silly mistake of sight. Active on GItHub. Learning bit by bit not GigaByte. This is it, me.  😄</p>
+            <h1 class="info-title">LOVING INTER-CONNECTION OF 0 AND 1.</h1>
+            <p class="info-desc margin-bottom">Chilling with code, mostly, friend of bugs. Nevertheless, I come up with a silly mistake of sight. Active on GitHub. Learning bit by bit not GigaByte. This is it, me.  😄</p>
             <button class="articles-btn" onclick="location.href='articles.php'">Read My Articles</button>
         </div>
         <img src="Images/portfolio-img.png" alt="" class="portfolio-img">
