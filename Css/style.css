@@ -237,4 +237,7 @@ input{
     .skill-img{
         margin: 0;
     }
+    .article-input{
+        padding: 2rem;
+    }
 }
